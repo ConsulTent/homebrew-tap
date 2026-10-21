@@ -1,0 +1,19 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  brew:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew audit --strict --online Formula/mcpcli.rb
+      - run: HOMEBREW_NO_INSTALL_FROM_API=1 brew install --build-from-source Formula/mcpcli.rb
+      - run: brew test mcpcli
