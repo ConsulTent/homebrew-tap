@@ -14,5 +14,5 @@ jobs:
     steps:
       - uses: Homebrew/actions/setup-homebrew@4790763c0a3ba4036f72634dc079c4a7dfcd4878 # 2026.10.19.1
       - run: brew audit --strict --online mcpcli
-      - run: HOMEBREW_NO_INSTALL_FROM_API=1 brew install --build-from-source mcpcli
+      - run: HOMEBREW_NO_INSTALL_FROM_API=1 brew install --build-from-source ./Formula/mcpcli.rb
       - run: brew test mcpcli
