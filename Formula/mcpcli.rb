@@ -1,5 +1,5 @@
 class Mcpcli < Formula
-  desc "Client and inspector for MCP (Model Context Protocol) servers"
+  desc "MCP (Model Context Protocol) client and inspector CLI"
   homepage "https://github.com/ConsulTent/mcpcli"
   url "https://github.com/ConsulTent/mcpcli/archive/refs/tags/v1.1.0.tar.gz"
   sha256 "3f85f5ba9e5639dbf83017ae92f8fb01d102f21a4c84094650f2dcb0d4b423f7"
