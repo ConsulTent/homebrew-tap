@@ -13,6 +13,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: Homebrew/actions/setup-homebrew@4790763c0a3ba4036f72634dc079c4a7dfcd4878 # 2026.10.19.1
-      - run: brew audit --strict --online mcpcli
-      - run: HOMEBREW_NO_INSTALL_FROM_API=1 brew install --build-from-source ./Formula/mcpcli.rb
-      - run: brew test mcpcli
+      - run: brew tap ConsulTent/tap "$GITHUB_WORKSPACE"
+      - run: brew audit --strict --online ConsulTent/tap/mcpcli
+      - run: HOMEBREW_NO_INSTALL_FROM_API=1 brew install --build-from-source ConsulTent/tap/mcpcli
+      - run: brew test ConsulTent/tap/mcpcli
