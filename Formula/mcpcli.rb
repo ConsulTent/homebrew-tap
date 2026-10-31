@@ -5,8 +5,8 @@ class Mcpcli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ConsulTent/mcpcli/releases/download/v1.3.2/mcp-darwin-arm64"
-      sha256 "dab8e46a13f3386fb08097fb1d52d1cc66bec14716253e9bee9da79ed0b69688"
+      url "https://github.com/ConsulTent/mcpcli/archive/refs/tags/v1.3.3.tar.gz"
+      sha256 "eed93d0dab3a9a2ef31e4ee9e508b1c16e23983f51dd9eb70381ca9142a58b37"
     end
     on_intel do
       url "https://github.com/ConsulTent/mcpcli/releases/download/v1.3.2/mcp-darwin-amd64"
