@@ -5,22 +5,22 @@ class Mcpcli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ConsulTent/mcpcli/releases/download/v1.3.3/mcp-darwin-arm64"
-      sha256 "8816cc3a8cc86f0b18166a21d7b59bde1a7b24a328fe3789dfdb565e3ac1ddc6"
+      url "https://github.com/ConsulTent/mcpcli/releases/download/v1.4.0/mcp-darwin-arm64"
+      sha256 "5470a518893827bdaf6c4cc7fad52b784a1c0ce837174c2d08779026f3a30c29"
     end
     on_intel do
-      url "https://github.com/ConsulTent/mcpcli/releases/download/v1.3.3/mcp-darwin-amd64"
-      sha256 "53c7d46f9547bcd5004cbebd61f1b7fa2c5d89e64c16fc316665f7f95f6bdae8"
+      url "https://github.com/ConsulTent/mcpcli/releases/download/v1.4.0/mcp-darwin-amd64"
+      sha256 "36e80ffa95d834867a92281c1d2d9d6fb8a8562952ef342bb38db522b351f2c7"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/ConsulTent/mcpcli/releases/download/v1.3.3/mcp-linux-arm64"
-      sha256 "67db50e0294fbebfdfa9af4303b86f9c9e973d11c745feb96af3695f2db5e3af"
+      url "https://github.com/ConsulTent/mcpcli/releases/download/v1.4.0/mcp-linux-arm64"
+      sha256 "6b2dd5644560393282017b3357d692bddd2f6eb5c3afcaa420afd5f615d3e153"
     end
     on_intel do
-      url "https://github.com/ConsulTent/mcpcli/releases/download/v1.3.3/mcp-linux-amd64"
-      sha256 "f4cab0978b5a1bb60aee48e08fb43a1a795062b1a180ee834a1cfd41b0f5c425"
+      url "https://github.com/ConsulTent/mcpcli/releases/download/v1.4.0/mcp-linux-amd64"
+      sha256 "3b93776fa3d5b9e654c797276d34fc66e8f8cf9f4e056fc7e4828af7833817db"
     end
   end
 
